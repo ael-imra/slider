@@ -6,7 +6,7 @@ window.addEventListener('load',() => {
     chevronLeft.addEventListener('click',()=>{
       for (let i = 0;i < allSlide.length;i++)
       {
-        if (allSlide[i].getAttribute('id') === 'slideright' && allSlide[i + 1])
+        if (allSlide[i].getAttribute('id') === 'slideright')
         {
           allSlide[i - 2].removeAttribute('id');
           allSlide[i - 2].setAttribute('class', 'slides d-none');
@@ -21,7 +21,7 @@ window.addEventListener('load',() => {
     chevronRight.addEventListener('click',()=>{
       for (let i = 0;i < allSlide.length;i++)
       {
-        if (allSlide[i].getAttribute('id') === 'slideleft' && i - 1 >= 0)
+        if (allSlide[i].getAttribute('id') === 'slideleft')
         {
           allSlide[i + 2].removeAttribute('id');
           allSlide[i + 2].setAttribute('class', 'slides d-none');
